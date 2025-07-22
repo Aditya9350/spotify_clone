@@ -1,0 +1,106 @@
+{
+  "Start_browsing": [
+    {
+      "event_type": "Music",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb",
+      "color": "DC148C"
+    },
+    {
+      "event_type": "Podcast",
+      "image": "https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa",
+      "color": "006450"
+    },
+    {
+      "event_type": "LiveEvents",
+      "image": "https://concerts.spotifycdn.com/images/live-events_category-image.jpg",
+      "color": "8400E7"
+    }
+  ],
+  "browsing_all": [
+    {
+      "event_type": "Made for You",
+      "image": "https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe",
+      "color": "1E3264"
+    },
+    {
+      "event_type": "New Release",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64",
+      "color": "608108"
+    },
+    {
+      "event_type": "Rain Manson",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf39dec6ab12d7a8c50199db47",
+      "color": "006450"
+    },
+    {
+      "event_type": "Hindi",
+      "image": "https://i.scdn.co/image/ab67fb8200005caff5976b97bcf10d98acbae2cd",
+      "color": "DC148C"
+    },
+    {
+      "event_type": "Telugu",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf80699a8b7d59a21b38f964bd",
+      "color": "BA5D07"
+    },
+    {
+      "event_type": "Punjabi",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf4f1aa71a9cdcffdf8430c070",
+      "color": "B02897"
+    },
+    {
+      "event_type": "Charts",
+      "image": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+      "color": "8D67AB"
+    },
+    {
+      "event_type": "Podcasts Charts",
+      "image": "https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg",
+      "color": "0D73EC"
+    },
+    {
+      "event_type": "Podcast New Release",
+      "image": "https://t.scdn.co/images/209c867f5bb34076b0dcc9deeb1868e6",
+      "color": "8E66AC"
+    },
+    {
+      "event_type": "Video Podcast",
+      "image": "https://i.scdn.co/image/9af79fd06e34dea3cd27c4e1cd6ec7343ce20af4",
+      "color": "13300"
+    },
+    {
+      "event_type": "Business & Technology",
+      "image": "https://i.scdn.co/image/e227cd9674618024276c65f1213fb05af34cf512",
+      "color": "777777"
+    },
+    {
+      "event_type": "Tamil",
+      "image": "https://i.scdn.co/image/ab67fb8200005cafae68f35dc5d86af7a1c1b58f",
+      "color": "BA5D07"
+    },
+    {
+      "event_type": "Malayalam",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf77a5fdbc439492d09d3d84fb",
+      "color": "477D95"
+    },
+    {
+      "event_type": "Bhojpuri",
+      "image": "https://i.scdn.co/image/ab67fb8200005cafe362fbcb5932b28679cf00f8",
+      "color": "E13300"
+    },
+    {
+      "event_type": "Gazal",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf666a4ae3e6161da7a120ca14",
+      "color": "777777"
+    },
+    {
+      "event_type": "Discover",
+      "image": "https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg",
+      "color": "8D67AB"
+    },
+    {
+      "event_type": "Summer",
+      "image": "https://i.scdn.co/image/ab67fb8200005caf1d858b423c5b3194d72c7c28",
+      "color": "27856A"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "Hindi": [
+    {
+      "name": "Arijit Singh",
+      "image": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "isNetwork": true
+    },
+    {
+      "name": "A.R. Rahman",
+      "image": "https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c",
+      "isNetwork": true
+    },
+    {
+      "name": "Pritam",
+      "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca",
+      "isNetwork": true
+    },
+    {
+      "name": "Sachin-Jigar",
+      "image": "https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e",
+      "isNetwork": true
+    },
+    {
+      "name": "Vishal-Shekhar",
+      "image": "https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf",
+      "isNetwork": true
+    },
+    {
+      "name": "Atif Aslam",
+      "image": "https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84",
+      "isNetwork": true
+    },
+    {
+      "name": "Anirudh Ravichander",
+      "image": "https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843",
+      "isNetwork": true
+    },
+    {
+      "name": "Udit Narayan",
+      "image": "https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4",
+      "isNetwork": true
+    },
+    {
+      "name": "Yo Yo Honey Singh",
+      "image": "https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f",
+      "isNetwork": true
+    },
+    {
+      "name": "Shreya Ghosal",
+      "image": "https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9",
+      "isNetwork": true
+    },
+    {
+      "name": "Alka Yagnik",
+      "image": "https://i.scdn.co/image/ab67616100005174935b2dd507212bd72a71d7f9",
+      "isNetwork": true
+    }
+  ],
+  "Punjabi": [
+    {
+      "name": "Sidhu Moose Wala",
+      "image": "https://i.scdn.co/image/ab676161000051749973157bdaedef3f77ef8e13",
+      "isNetwork": true
+    },
+    {
+      "name": "Jassie Gill",
+      "image": "https://i.scdn.co/image/ab676161000051744fabb1f855e1a661fc28495a",
+      "isNetwork": true
+    },
+    {
+      "name": "Ikky",
+      "image": "https://i.scdn.co/image/ab67616100005174586666f103b6c3a19f5ca41a",
+      "isNetwork": true
+    },
+    {
+      "name": "Garry Sandhu",
+      "image": "https://i.scdn.co/image/ab676161000051741437169a2779d39c51775b04",
+      "isNetwork": true
+    },
+    {
+      "name": "Harrdy Sandhu",
+      "image": "https://i.scdn.co/image/ab676161000051740f91fa8766ef8adb10fe3b4e",
+      "isNetwork": true
+    },
+    {
+      "name": "Avvy Sra",
+      "image": "https://i.scdn.co/image/ab676161000051742caaadd0fa4a7fb0ff304563",
+      "isNetwork": true
+    },
+    {
+      "name": "Diljit Dosanjh",
+      "image": "https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9",
+      "isNetwork": true
+    },
+    {
+      "name": "Gurtez Akhtar",
+      "image": "https://i.scdn.co/image/ab67616100005174dad91d06dd67ad61e0252fd3",
+      "isNetwork": true
+    },
+    {
+      "name": "AP Dhillon",
+      "image": "https://i.scdn.co/image/ab67616100005174fb505b37709fa86cfd8f55b3",
+      "isNetwork": true
+    },
+    {
+      "name": "Ammy Virk",
+      "image": "https://i.scdn.co/image/ab67616100005174826f384334f35ca271847e6c",
+      "isNetwork": true
+    },
+    {
+      "name": "Juss",
+      "image": "https://i.scdn.co/image/ab67616100005174e8154e7433e3c5528a3fafda",
+      "isNetwork": true
+    }
+  ],
+  "International": [
+    {
+      "name": "Arya Starr",
+      "image": "assets/artists_icons/Ayra.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Asake",
+      "image": "assets/artists_icons/Asake.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Bloody Civilian",
+      "image": "assets/artists_icons/Bloody.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Bnxn",
+      "image": "assets/artists_icons/Bnxn.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Burna Boy",
+      "image": "assets/artists_icons/Burna.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Fireboy DML",
+      "image": "assets/artists_icons/Fireboy.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Grammyy 4L",
+      "image": "assets/artists_icons/Grammyy.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Kizz Daniel",
+      "image": "assets/artists_icons/Kizz_daniel.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Lyncayo",
+      "image": "assets/artists_icons/Lyncayo.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Odumodu Blvck",
+      "image": "assets/artists_icons/Odumod_blvck.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Omah Lay",
+      "image": "assets/artists_icons/Omah.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Rema",
+      "image": "assets/artists_icons/Rema.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Wizkid",
+      "image": "assets/artists_icons/Wizkid.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Young John",
+      "image": "assets/artists_icons/Young.png",
+      "isNetwork": false
+    },
+    {
+      "name": "Zinoleesky",
+      "image": "assets/artists_icons/Zinoleesky.png",
+      "isNetwork": false
+    }
+  ]
+}
