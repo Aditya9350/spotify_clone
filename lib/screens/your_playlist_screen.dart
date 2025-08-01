@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:untitled1/common_widgets/util/utility.dart';
+import 'package:untitled1/common_widgets/util/util.dart';
 import 'package:untitled1/constants/color_files/app_colors.dart';
 
 class YourPlaylistScreen extends StatefulWidget {

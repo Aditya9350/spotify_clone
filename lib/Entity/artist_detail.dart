@@ -12,4 +12,7 @@ class ArtistDetails {
       isNetwork: json['isNetwork'],
     );
   }
+
+
 }
+

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:untitled1/common_widgets/cutomArtistsScreen.dart';
+import 'package:untitled1/screens/dashboard_screen.dart';
 
 class SelectArtistScreen extends StatefulWidget {
   const SelectArtistScreen({super.key});
@@ -13,6 +14,7 @@ class SelectArtistScreen extends StatefulWidget {
 
 class _SelectArtistScreenState extends State<SelectArtistScreen> {
   Set<String> selectedArtists = {};
+
   // List<Map<String, String>> hindiArtists = artistData["hindi"]!;
 
   final List<Map<String, String>> allArtistsList = [
@@ -31,13 +33,15 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
     {"name": "Wizkid", "image": "assets/artists_icons/Wizkid.png"},
     {"name": "Young John", "image": "assets/artists_icons/Young.png"},
     {"name": "Zinoleesky", "image": "assets/artists_icons/Zinoleesky.png"},
+    {"name": "Amit", "image": "assets/artists_icons/Zinoleesky.png"},
+    {"name": "Aditya", "image": "assets/artists_icons/Zinoleesky.png"},
+    {"name": "Anurag", "image": "assets/artists_icons/Zinoleesky.png"},
   ];
 
   Future<Map<String, dynamic>> loadArtistJson() async {
     String jsonString = await rootBundle.loadString('assets/artist.json');
     return jsonDecode(jsonString);
   }
-
 
   final List<Map<String, String>> initialArtistsList = [];
   final int initialArtistCount = 14;
@@ -51,6 +55,9 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
   void initState() {
     super.initState();
     initialArtistsList.addAll(allArtistsList.take(initialArtistCount));
+
+    // (String, int) data = ('Anurag', 25);
+    // print(data.$1);
   }
 
   @override
@@ -58,9 +65,9 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
     List<Map<String, String>> displayList = isShowAllList
         ? allArtistsList
         : [
-      ...initialArtistsList,
-      {"name": "More", "image": "assets/artists_icons/More.png"},
-    ];
+            ...initialArtistsList,
+            {"name": "More", "image": "assets/artists_icons/More.png"},
+          ];
 
     return MaterialApp(
       home: Scaffold(
@@ -87,8 +94,10 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
                     if (artist["name"] == "More") {
                       return GestureDetector(
                         onTap: () {
+                          isShowAllList = true;
                           setState(() {
-                            isShowAllList = true;
+
+                            print(" is more selected");
                           });
                         },
                         child: Padding(
@@ -145,10 +154,7 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
                 ),
               ],
             ),
-            Container(
-              height: 200,
-              color: Colors.black.withOpacity(.3),
-            ),
+
             if (selectedArtists.isNotEmpty)
               Positioned(
                 bottom: 20,
@@ -169,7 +175,7 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
                     if (selectedArtists.length >= 3)
                       ElevatedButton(
                         onPressed: () {
-                          // Your logic here
+                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> DashboardScreen(isProfileScreen: false)));
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.white,
@@ -180,9 +186,11 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
                         ),
                         child: Text(
                           "Done",
-                          style: TextStyle(color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15),
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
                         ),
                       ),
                   ],
@@ -254,9 +262,6 @@ class _SelectArtistScreenState extends State<SelectArtistScreen> {
   }
 
   Widget _buildChip(String label, bool selected) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-
-    );
+    return Row(mainAxisAlignment: MainAxisAlignment.start);
   }
 }

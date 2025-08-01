@@ -6,7 +6,9 @@ import 'package:untitled1/Login_Screen/select_artist_screen.dart';
 import 'package:untitled1/constants/color_files/app_colors.dart';
 import 'package:untitled1/screens/dashboard_screen.dart';
 import 'package:untitled1/screens/home_screen.dart';
+import 'package:untitled1/screens/recent_playlist_screen.dart';
 import 'package:untitled1/screens/spotify_login_screen.dart';
+import 'package:untitled1/screens/user_profile_screen.dart';
 import 'package:untitled1/splash_screen/splash_screen.dart';
 
 void main() async {
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
         splashColor: AppColors.transparent,
         highlightColor: AppColors.transparent
       ),
-      home:  DashboardScreen(),
+      home:  SelectArtistScreen(),
     );
   }
 }

@@ -3,18 +3,20 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:marquee/marquee.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'package:untitled1/common_widgets/my_compact_music_player_widget.dart';
+import 'package:untitled1/screens/drawer_screen.dart';
 import 'package:untitled1/screens/premium_screen.dart';
 import 'package:untitled1/screens/search_screen.dart';
+import 'package:untitled1/screens/user_profile_screen.dart';
 import 'package:untitled1/screens/your_playlist_screen.dart';
 
 import '../constants/color_files/app_colors.dart';
 import 'home_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({super.key});
+  bool isProfileScreen = false;
+   DashboardScreen({super.key, required this.isProfileScreen});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
@@ -29,6 +31,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   void _onItemTapped(int index) {
     setState(() {
+      widget.isProfileScreen = false;
       _selectedIndex = index;
     });
   }
@@ -61,13 +64,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
       androidCloseOnBackTap: true,
       mainScreenTapClose: true,
       angle: 0,
-      menuScreen: Drawer(),
+      menuScreen: Drawer(
+        backgroundColor: AppColors.lightGray,
+        child: DrawerScreen(),
+      ),
       mainScreen: Scaffold(
         body: listScreen.isEmpty
             ? Center(child: CircularProgressIndicator())
             : Stack(
                 children: [
-                  listScreen[_selectedIndex],
+                  widget.isProfileScreen ? UserProfileScreen() : listScreen[_selectedIndex],
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: GestureDetector(
@@ -184,7 +190,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Widget openMusicDetailLayout() {
     return Padding(
-      padding: const EdgeInsets.only(left: 10.0, right: 10, top: 30),
+      padding: const EdgeInsets.only(left: 20.0, right: 20, top: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -285,17 +291,18 @@ class _DashboardScreenState extends State<DashboardScreen> {
                  Spacer(),
                  SvgPicture.asset('assets/media_icons/cross_icon.svg',width: 30,height: 30,),
                  SizedBox(width: 25,),
-                 SvgPicture.asset('assets/media_icons/cross_icon.svg',width: 30,height: 30,)
+                 SvgPicture.asset('assets/media_icons/Add_Icon.svg',width: 35,height: 35,)
                ],
              ),
            ),
-          SizedBox(height: 20,),
+          SizedBox(height: 30,),
           LinearProgressIndicator(
             color: AppColors.gray,
             backgroundColor: Colors.white,
             value: 0.5,
 
           ),
+          SizedBox(height: 5,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -303,14 +310,49 @@ class _DashboardScreenState extends State<DashboardScreen> {
               Text("4.00",style: TextStyle(color: AppColors.white,fontSize: 15,fontWeight: FontWeight.w400),),
             ],
           ),
+          SizedBox(height: 25,),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SvgPicture.asset('assets/media_icons/previous_icon.svg',height: 25,width: 25,alignment: Alignment.center,),
+              GestureDetector(
+                onTap: (){},
+                child: SvgPicture.asset('assets/media_icons/shuffle_icon.svg',height: 30,width: 30,alignment: Alignment.center,),
+              ),
+              GestureDetector(
+                onTap: (){},
+                child: SvgPicture.asset('assets/media_icons/previous_icon.svg',height: 25,width: 25,alignment: Alignment.center,),
+              ),
+              GestureDetector(
+                onTap: (){},
+                child: CircleAvatar(
+                  backgroundColor: AppColors.white,
+                  radius: 30,
+                  child: Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Image.asset('assets/media_icons/pause_black_icon.png',),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: (){},
+                child: SvgPicture.asset('assets/media_icons/next_icon.svg',height: 25,width: 25,alignment: Alignment.center,),
+              ),
 
-             Icon(Icons.timer_sharp,color: AppColors.white,size: 25,)
+             GestureDetector(
+               onTap: (){},
+               child: Icon(Icons.timer_sharp,color: AppColors.white,size: 30,),
+             )
             ],
-          )
+          ),
+          SizedBox(height: 25),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SvgPicture.asset('assets/media_icons/select_device.svg',width: 25,height: 25),
+              Image.asset('assets/media_icons/share_icon.png',height:50,width: 50)
+            ],
+          ),
+
         ],
       ),
     );

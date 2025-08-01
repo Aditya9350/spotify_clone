@@ -7,7 +7,7 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:untitled1/Entity/collection_events.dart';
 import 'package:untitled1/constants/color_files/app_colors.dart';
 
-import '../common_widgets/util/utility.dart';
+import '../common_widgets/util/util.dart';
 
 class SearchScreen extends StatefulWidget {
   final ZoomDrawerController controller;

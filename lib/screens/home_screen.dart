@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:untitled1/Entity/artist_detail.dart';
 import 'package:untitled1/common_widgets/common_header_dasboard.dart';
-import 'package:untitled1/common_widgets/util/utility.dart';
+import 'package:untitled1/common_widgets/util/util.dart';
 import 'package:untitled1/constants/color_files/app_colors.dart';
 
 class HomeScreen extends StatefulWidget {
